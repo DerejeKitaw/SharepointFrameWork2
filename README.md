@@ -17,11 +17,7 @@
 ```bash
 npm install gulp yo @microsoft/generator-sharepoint --global
 ```
-> Trusting the self-signed developer certificate
 
-```bash
-gulp trust-dev-cert
-```
 ### **Step 2 :** Create a new web part project
 ```bash
 md helloworld-webpart
@@ -45,6 +41,12 @@ yo @microsoft/sharepoint
     - **Which framework would you like to use?**: No JavaScript web framework
 
 ### **Step 3 :** Preview the web part
+> Trusting the self-signed developer certificate
+
+```bash
+gulp trust-dev-cert
+```
+
 ```bash
 gulp serve
 ```
